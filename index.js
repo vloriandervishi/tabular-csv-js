@@ -8,6 +8,9 @@ async function getData() {
     const rows = rws.split(",");
     const year = rows[0];
     const temp = rows[1];
-    console.log(year, temp);
+    // get array of objects and push to array to data set array on chart.js
+    //console.log(year, temp);
+    return year, temp;
   });
+  return row;
 }

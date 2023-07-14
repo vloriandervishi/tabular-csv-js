@@ -11,10 +11,9 @@
     <canvas id="canvas" width="400" height="400"> </canvas>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <script>
       const ctx = document.getElementById("canvas");
-      const xlabel = [];
+
       new Chart(ctx, {
         type: "bar",
         data: {
@@ -22,7 +21,7 @@
           datasets: [
             {
               label: "Global Average Temperature",
-              data: [12, 19, 3, 5, 2, 3],
+              data: [12, 13, 42, 144, 14, 141, 143],
               borderWidth: 1,
             },
           ],
