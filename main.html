@@ -3,37 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js" id="getData">
+      const data=array;
+      console.log(data);
+    </script>
+
     <!-- <script src=></script> -->
 
     <title>Fetch and Graph</title>
   </head>
   <body>
-    <canvas id="canvas" width="400" height="400"> </canvas>
-    <script src="index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-      const ctx = document.getElementById("canvas");
-
-      new Chart(ctx, {
-        type: "bar",
-        data: {
-          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-          datasets: [
-            {
-              label: "Global Average Temperature",
-              data: [12, 13, 42, 144, 14, 141, 143],
-              borderWidth: 1,
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    </script>
+    <canvas id="canvas" width="800" height="800"> </canvas>
   </body>
 </html>
